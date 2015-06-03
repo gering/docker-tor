@@ -45,4 +45,9 @@ SocksPort 0.0.0.0:9050
 #HiddenServicePort 80 127.0.0.1:80
 #HiddenServicePort 22 127.0.0.1:22
 
+DNSPort 9053
+DNSListenAddress 0.0.0.0 # We have to listen on 0.0.0.0 to be reachable
+AutomapHostsOnResolve 1
+AutomapHostsSuffixes .exit,.onion
+
 ExitPolicy reject *:* # no exits allowed
