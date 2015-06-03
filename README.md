@@ -17,11 +17,11 @@ Simple container that sets up a tor proxy via socks.
 
 ### Test [local](https://docs.docker.com/installation/)
 
-    $ curl -x http://127.0.0.1:9050 -L http://echoip.com/
+    $ curl -socks http://127.0.0.1:9050 -L http://echoip.com/
 
 ### Test with [boot2docker](https://docs.docker.com/installation/mac/)
 
-    $ curl -x http://$(boot2docker ip 2>/dev/null):9050  -L http://echoip.com/
+    $ curl -socks http://$(boot2docker ip 2>/dev/null):9050  -L http://echoip.com/
 
 You can now connect to the socks proxy via port 9050.
 
